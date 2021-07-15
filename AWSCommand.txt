@@ -1,0 +1,85 @@
+user name = ec2-user
+
+sudo -i // super user to install any software
+exit // exit as super user
+
+pwd // current working directory
+
+ls // list all files
+
+wget s3bucket_jar_link // download jar from s3 bucket
+
+yum -- to install software
+yum repolist
+
+yum list installed -- software installed
+
+yum grouplist  -- groups that are available
+
+yum install package_name -- to install a software
+
+yum remove package_name -- delete a software
+
+yum group group_name -- install software as a group
+
+tail -5 /var/log/yum.log -- see last 5 lines of log file
+
+yum history -- list of yum commands we have used
+
+yum search java -- list all the packages that java are part of
+
+-------------- MYSQL ------------------
+
+yum install -y mariadb-server
+systemctl enable mariadb -- enable maria db as service
+systemctl start mariadb -- start maria db as service
+mysql_secure_installation -- reset default password
+mysql -uroot -p -- login command
+
+
+--------------- JAVA -------------------
+yum install java-1.8.0-openjdk
+
+sudo amazon-linux-extras install java-openjdk11
+
+java -version -- check java version
+
+alternatives --config java
+
+java -jar jar_name
+
+ctrl + c -- to stop
+
+
+
+
+-------------------------------------------------
+
+cat /etc/rc.local -- the commands under rc.local file will execute every time the machine is started
+ 
+------------ VI Editor ---------
+vi /etc/rc.local
+
+esc+a to write
+
+java -jar /home/ec2-user/jar_name.jar
+
+esc to get out of vi editor
+
+:wq save and exit
+-------------------------------------------
+
+chmod +x /etc/rc.d/rc.local  -- Give permission for symbolic link
+
+
+---------------------------- INSTALL EXTRA PACKAGE --------------------------
+amazon-linux-extras install epel -y
+yum install stress -y  --- put stress on system
+
+
+
+
+
+
+
+
