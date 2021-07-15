@@ -1,3 +1,4 @@
+------------------------------------- AWS ------------------------------------
 user name = ec2-user
 
 sudo -i // super user to install any software
